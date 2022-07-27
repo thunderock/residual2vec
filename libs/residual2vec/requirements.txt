@@ -1,7 +1,0 @@
-faiss-cpu
-numpy
-scikit-learn
-scipy
-numba
-torch
-tqdm
