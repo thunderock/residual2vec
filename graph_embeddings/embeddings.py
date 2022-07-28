@@ -157,7 +157,7 @@ class Node2Vec(NodeEmbeddings):
 class DeepWalk(Node2Vec):
     def __init__(self, **params):
         Node2Vec.__init__(self, **params)
-        self.w2vparams["sg"] = 0
+        self.w2vparams["sg"] = 1
         self.w2vparams["hs"] = 1
 
 
