@@ -112,7 +112,7 @@ elif model_name == "gcn-doubleK":
 elif model_name == "gat":
     model = graph_embeddings.GAT(layer_sizes=[64, 256])
 elif model_name == "gat-doubleK":
-    model = graph_embeddings.GCN(num_default_features=dim * 2)
+    model = graph_embeddings.GAT(num_default_features=dim * 2)
 elif model_name == "lndeg":  # fake embedding. Just to save offset
     A = sparse.csr_matrix(net)
     deg = np.array(A.sum(axis=1)).reshape(-1)
